@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <FrameLayout
+        android:id="@+id/user_image_layout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_default_image">
+        </ImageView>
+    </FrameLayout>
+
+    <TextView android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-codensed"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/user_image_layout"
+        android:layout_alignTop="@id/user_image_layout"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="Niraj"/>
+    <TextView android:id="@+id/email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#527f77"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/user_image_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="nirajbrn@gmail.com"/>
+
+    <TextView android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/user_image_layout"
+        android:layout_alignBottom="@id/user_image_layout"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="4dp"
+        android:text="Barnwal"/>
+
+</RelativeLayout>
